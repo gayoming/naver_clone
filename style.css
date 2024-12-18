@@ -1,6 +1,7 @@
-        * {box-sizing: border-box; font-family: 'NanumBarunGothic';}
-        html, body, form {margin: 0; padding: 0;}
-        a {display: inline-block;}
+        * {box-sizing: border-box; font-family: 'NanumBarunGothicLight';}
+        html, body, form {margin: 0; padding: 0; letter-spacing: -0.4px;}
+        ul {list-style: none; padding: 0;}
+        a {display: inline-block; text-decoration: none; color: inherit;}
         .blind {position: absolute; clip: rect(0 0 0 0); width: 1px; height: 1px; margin: -1px; overflow: hidden;} /*웹 접근성 blind txt*/
         
         :root {
@@ -91,9 +92,11 @@
         /* 검색창 */
         #search > form {width: 708px; height: 60px; border: 1px solid #03c75a; border-radius: 999px; display: inline-flex; text-align: left;}
         #search > form:hover {box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .12);}
-        #search-svg {display: inline-flex; justify-content: center; align-items: center; width: 68px; height: 100%; margin-right: 12px; padding-left: 10px;}
-        #search-svg svg {width: 24px; height: 24px; fill: #03c75a;}
-        #search-input {width: 480px; height: 100%; padding: 17px 0; font-size: 1.4rem; line-height: 24px;  border: none; outline: none;}
+        #search-svg {display: inline-flex; justify-content: center; align-items: center; width: 68px; height: 100%; margin-right: 12px; padding-left: 10px; position: relative;}
+        #search > form:focus-within #search-svg::after {content: ""; width: 1px; height: 20px; background-color: #e4e4e4; position: absolute; top: 20px; right: 0; display: inline-block;}
+        #search-svg::after {display: none;}
+        #search-svg svg {width: 24px; height: 24px; fill: #03c75a; }
+        #search-input {width: 480px; height: 100%; padding: 17px 0; font-size: 1.4rem; line-height: 24px; border: none; outline: none; font-family: 'NanumBarunGothicUltraLight';}
         #search-input::placeholder {color: transparent;}
         #search-input:focus::placeholder {color: #e4e4e4;}
         #search-right {display: flex; flex:1; align-items: stretch; justify-content: flex-end;}
@@ -104,3 +107,23 @@
         #search-button {padding: 17px 27px 16px 10px;}
         #search-button::before { background-position: -405px -78px; background-repeat: no-repeat; width: 25px; height: 25px;}
         #main {height: 2000px;}
+
+        /* 검색창 밑에 메뉴 */
+        nav {margin-top: 12px;}
+        nav ul {display: flex; font-size: 0.9rem; width: 708px; margin: 0 auto;}
+        nav ul li {margin-left: 4px; width: 64px;}
+        nav ul li a span {margin-top: 5px; display: inline-block;}
+        nav ul a div {margin: 0 auto; position: relative; text-align: center;}
+        nav ul a div::after {content: ''; display: inline-block; background-image: url(https://pm.pstatic.net/resources/asset/sp_main.b27083b1.png); background-size: 463px 440px; background-repeat: no-repeat; width: 40px; height: 40px; margin: 2px;}
+        nav ul a div::before {content: ""; display: block; position: absolute; top: -1px; left: -3px; background-image: url(https://pm.pstatic.net/resources/asset/sp_main.b27083b1.png); background-size: 463px 440px; background-position: -153px -142px; background-repeat: no-repeat; width: 50px; height: 50px; z-index: -1;}
+        nav li:nth-of-type(1) a div::after{ background-position: -205px -219px;}
+        nav li:nth-of-type(2) a div::after { background-position: -41px -219px;}
+        nav li:nth-of-type(3) a div::after { background-position: 0px -219px;}
+        nav li:nth-of-type(4) a div::after { background-position: -41px -260px;}
+        nav li:nth-of-type(5) a div::after { background-position: -270px -205px;}
+        nav li:nth-of-type(6) a div::after { background-position: -123px -260px;}
+        nav li:nth-of-type(7) a div::after { background-position: 0px -260px;;}
+        nav li:nth-of-type(8) a div::after { background-position: -270px 0px;;}
+        nav li:nth-of-type(9) a div::after { background-position: -164px -260px;}
+        nav li:nth-of-type(10) a div::after { background: url(https://s.pstatic.net/static/www/mobile/edit/20240112_1095/upload_1705057885416AaxUM.png) no-repeat; background-size: 40px 40px; }
+        nav li:nth-of-type(11) a div::after { background-position: -270px -164px;}   
