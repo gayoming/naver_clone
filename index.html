@@ -12,7 +12,7 @@
 <body>
     <div id="wrap">
         <div id="wrap-center">
-            <div id="header">
+            <header>
                 <button id="header-hamburger">
                     <div></div>
                     <span class="blind">확장 영역</span>
@@ -33,14 +33,14 @@
                     <div></div>
                     <span class="blind">알림</span>
                 </button>
-            </div>
+            </header>
             <div id="search">
                 <form action="">
                     <a href="https://www.naver.com" id="search-svg">
                         <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.273 12.845 7.376 0H0v24h7.727V11.155L16.624 24H24V0h-7.727v12.845z"></path></svg>
                     </a>
                     <label for="search-input" class="blind">검색어 입력</label>
-                    <input type="text" id="search-input" placeholder="검색어를 입력하세요."/>
+                    <input type="text" id="search-input" placeholder="검색어를 입력하세요." autofocus="autofocus" />
                     <div id="search-right">
                         <button href="#" id="search-keyboard">
                             <span class="blind">입력도구</span>
@@ -122,9 +122,41 @@
                             <span class="blind">더보기</span>
                         </a>
                     </li>
+                    <li>
+                        <a href="#">
+                            <div></div>
+                            <span>세이브더칠드런</span>
+                        </a>
+                    </li>
                 </ul>
             </nav>
-            <div id="main"></div>
+            <main>
+                <div id="main-left">
+                    <aside id="main-left-ad"></aside>
+                    <section id="main-newstand"></section>
+                    <section id="main-shopping"></section>
+                </div>
+                <div id="main-right">
+                    <section id="main-login">
+                        <div>네이버를 더 안전하고 편리하게 이용하세요</div>
+                        <a href="#" id="main-login-button"><i></i>로그인</a>
+                        <div class="main-login-find">
+                            <a href="#">아이디 찾기</a>
+                            <a href="#">비밀번호 찾기</a>
+                            <a href="#">회원가입</a>
+                        </div>
+                    </section>
+                    <aside id="main-right-ad"></aside>
+                    <section id="main-weather" class="weather-and-stock">
+                        <header>날씨</header>
+                        <div></div>
+                    </section>
+                    <section id="main-stock" class="weather-and-stock">
+                        <header>증시</header>
+                        <div></div>
+                    </section>
+                </div>
+            </main>
         </div>
     </div>
 </body>
