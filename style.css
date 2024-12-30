@@ -229,7 +229,7 @@
         #main-login > div:first-child {line-height: 20px;}
         #main-login-button {margin: 13px 0 0; padding: 17px 0; background-color: #03c75a; color: #fff; width: 100%; height: 56px; border-radius: 4px;}
         #main-login-button:hover {background-color: #17b75e;}
-        #main-login-button i {background-image: url(./sp_main.png); background-size: 463px 440px; background-position: 0px -301px; background-repeat: no-repeat; width: 72px; height: 14px; display: inline-block; margin: 3px 8px 0 0; vertical-align: top; vertical-align: -1px;}
+        #main-login-button i {background-image: url(./img/sp_main.png); background-size: 463px 440px; background-position: 0px -301px; background-repeat: no-repeat; width: 72px; height: 14px; display: inline-block; margin: 3px 8px 0 0; vertical-align: top; vertical-align: -1px;}
         #main-login .main-login-find {font-size: .875rem; margin: 16px 0 0; display: flex; justify-content: center;}
         #main-login .main-login-find a {color: #606060;}
         #main-login .main-login-find a:hover {text-decoration: underline;}
@@ -248,7 +248,6 @@
         .weather-and-stock > header a {border: 1px solid var(--color_border_in); border-radius: 999px; font-size: .7188rem; height: 26px; line-height: 24px; padding: 0 8px; color: var(--color_caption2); align-self: center;}
         .weather-and-stock > header a::before {content: ""; display: inline-block; background-image: url(https://pm.pstatic.net/resources/asset/sp_main.eae24523.png); background-size: 452px 436px; background-position: -91px -424px; background-repeat: no-repeat; width: 12px; height: 12px; margin: 6px 2px 0 0; vertical-align: top;}
         .weather-and-stock > header span {align-self: center; margin-left: auto; font-size: .8531rem; margin-top: 16px; margin-bottom: 16px; color: var(--color_caption2);}
-        #main-stock {height: 236px;}
         .weather-and-stock > div {border-top: 1px solid var(--color_border_in); display: flex;}
         .weather_box .left {display: flex; flex-flow: wrap; flex-flow: column; margin: 20px 0 0;}
         .weather_box .left > div:first-child {display: flex; margin: 0 0 10px;}
@@ -268,3 +267,22 @@
         .weather_box .weather_infor .dot::before {content: ""; display: inline-block; width: 3px; height: 3px; border-radius: 50%; background-color: var(--color_dot_divider); margin: 8px 0px 4px;}
         .weather_box .right {background: url(./img/weather.png) no-repeat; width: 80%; height: auto;background-size: 80% 80%; background-position: 70% 60%;}
         .weather-and-stock button::before {content: ""; display: block; background-image: url(https://pm.pstatic.net/resources/asset/sp_main.eae24523.png); background-size: 452px 436px; background-position: -132px -332px; background-repeat: no-repeat; width: 16px; height: 16px;}
+
+        /* 증시 */
+        #main-stock {padding-bottom: 10px;}
+        .stock_box {display: flex;}
+        .stock_box .left {flex: 1; display: flex; overflow: hidden;}
+        .stock_box .left > div {padding-top: 25px; padding-right: 10px;}
+        .stock_box .right {flex: 1;}
+        .stock_box .right li {padding: 10px 0; border-bottom: 1px solid var(--color_border_in); font-size: .9187rem;}
+        .stock_box .right li:first-child {padding-top: 0;}
+        .stock_box .right li:last-child span{display: flex; justify-content: space-between; color: var(--color_caption2);}
+        .stock_box .right li:last-child i {display: inline-block; background-image: url(https://pm.pstatic.net/resources/asset/sp_main.eae24523.png); background-size: 452px 436px; background-position: -226px -424px; background-repeat: no-repeat; width: 10px; height: 12px; margin-top: 5px;}
+        .stock_box .right li .stock_name {overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 82px;}
+        .stock_box .right li a {display: flex; justify-content: space-between;}
+        .stock_box .right li i.down {display: inline-block; background-image: url(https://pm.pstatic.net/resources/asset/sp_main.eae24523.png); background-size: 452px 436px; background-position: -39px -424px; background-repeat: no-repeat; width: 10px; height: 10px; margin-top: 5px;}
+        .stock_box .right li i.up {display: inline-block; background-image: url(https://pm.pstatic.net/resources/asset/sp_main.eae24523.png); background-size: 452px 436px; background-position: -65px -424px; background-repeat: no-repeat; width: 10px; height: 10px; margin-top: 5px;}
+        .stock_box .right .percent {font-size: .7188rem;}
+        .stock_box .right span.down {color: #2196f3;}
+        .stock_box .right span.up {color: #f44336;}
+        
