@@ -73,7 +73,7 @@
         /* header */
         #wrap-center > header {text-align: left; position: relative; height: 52px;}
         header >  button[id^=header]:hover::before {content: ""; width: 48px; height: 48px; background-color: var(--color_option_bg); border-radius: 50%; position: absolute; z-index: -1;}
-        header > button > div {background:url(/sp_main.png) no-repeat; background-size: 463px 440px; background-position: -311px -166px; width: 32px; height: 32px;}
+        header > button > div {background:url(./img/sp_main.png) no-repeat; background-size: 463px 440px; background-position: -311px -166px; width: 32px; height: 32px;}
         #header-hamburger, #header-naverpay, #header-talk, #header-notice, #header-shopping {position: absolute; top: 5px; display: inline-block; padding: 10px;}
         #header-hamburger {left: -13px;}
         #header-hamburger:hover::before { left: 1px; top: 2px; }
@@ -130,7 +130,7 @@
         nav li:last-child {width: 94px; position: relative;}
         nav li:last-child::before {content: ""; width: 1px; height: 20px; background-color: #e3e5e8; position: absolute; left: 10px; top: 12px;}
         nav li:last-child a div::before {display: none;}  
-        nav li:last-child a div::after {background: url(save_the_children.png) no-repeat; background-size: 40px 40px; border-radius: 15px;} 
+        nav li:last-child a div::after {background: url(./img/save_the_children.png) no-repeat; background-size: 40px 40px; border-radius: 15px;} 
 
         /* 메인 */
         main {height: 2000px; display: flex; margin: 29px 0 0;}
@@ -237,7 +237,7 @@
 
         /* 오른쪽 광고 배너 */
         #main-right-ad {height: 240px;}
-        .right-ad-box {width: 100%; height: 100%; background: url(./naver_ticket_ad.png) no-repeat; background-size: 420px 240px; background-position: 100% 100%; border-radius: 4px; position: relative;}
+        .right-ad-box {width: 100%; height: 100%; background: url(./img/naver_ticket_ad.png) no-repeat; background-size: 420px 240px; background-position: 100% 100%; border-radius: 4px; position: relative;}
         .right-ad-box::before {content: ""; display: block; position: absolute; top: 0; left: 0; right: 0; bottom: 0; border: 1px solid rgba(0, 0, 0, .05); border-radius: 4px;}
         
         /* 날씨 */
@@ -266,5 +266,5 @@
         .weather_box .weather_infor .dust p span {color: #02c73c;}
         .weather_box .weather_infor p {display: inline-block;}
         .weather_box .weather_infor .dot::before {content: ""; display: inline-block; width: 3px; height: 3px; border-radius: 50%; background-color: var(--color_dot_divider); margin: 8px 0px 4px;}
-        .weather_box .right {background: url(./weather.png) no-repeat; width: 80%; height: auto;background-size: 80% 80%; background-position: 70% 60%;}
+        .weather_box .right {background: url(./img/weather.png) no-repeat; width: 80%; height: auto;background-size: 80% 80%; background-position: 70% 60%;}
         .weather-and-stock button::before {content: ""; display: block; background-image: url(https://pm.pstatic.net/resources/asset/sp_main.eae24523.png); background-size: 452px 436px; background-position: -132px -332px; background-repeat: no-repeat; width: 16px; height: 16px;}
