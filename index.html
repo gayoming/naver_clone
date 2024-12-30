@@ -136,7 +136,30 @@
             </nav>
             <main>
                 <div id="main-left">
-                    <aside id="main-left-ad"></aside>
+                    <aside id="main-left-ad">
+                        <div class="ad_img">
+                            <img src="./seoul_digital_ad_01.jpg" alt="[광고]서울디지털대학교 36개 유망학과 25-1학기 신, 편입생 모집 중">
+                            <img src="./seoul_digital_ad_02.jpg" alt="">
+                            <img src="./seoul_digital_ad_03.jpg" alt="">
+                            <img src="./seoul_digital_ad_04.jpg" alt="">
+                        </div>
+                    </aside>
+                    <script>
+                        const adImg = document.querySelectorAll(".ad_img img");
+                        let currentIndex = 0;
+
+                        function ad_slide() {
+                            adImg.forEach((img, index) => {
+                                img.style.opacity = '0';
+                                img.style.transition ='opcity 1s ease-in-out';
+                            });
+
+                            adImg[currentIndex].style.opacity = '1';
+                            currentIndex = (currentIndex + 1) % adImg.length;
+                        }
+                        setInterval(ad_slide, 5000);
+                        ad_slide();
+                    </script>
                     <section id="main-newstand" class="left-section">
                         <div id="main-newstand-top">
                             <header>
@@ -446,15 +469,52 @@
                             <a href="#">회원가입</a>
                         </div>
                     </section>
-                    <aside id="main-right-ad"></aside>
+                    <aside id="main-right-ad">
+                        <div class="right-ad-box"></div>
+                    </aside>
                     <section id="main-weather" class="weather-and-stock">
-                        <header>날씨</header>
-                        <div></div>
+                        <header>
+                            <p>날씨</p>
+                            <a href="#">예보 비교</a>
+                            <span>서울시 을지로1가</span>
+                        </header>
+                        <div class="weather_box">
+                            <div class="left">
+                                <div>
+                                    <div class="weather"></div>
+                                    <div class="temperature">
+                                        <p>10&deg;</p>
+                                        <p>구름많음</p>
+                                    </div>
+                                </div>
+                                <div class="weather_infor">
+                                    <div>
+                                        <span class="deg">2&deg;</span>
+                                        <span class="deg">10&deg;</span>
+                                    </div>
+                                    <div class="dust">
+                                        <p>미세 <span>보통</span></p>
+                                        <span class="dot"></span>
+                                        <p>초미세 <span>보통</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right"></div>
+                        </div>
                     </section>
                     <section id="main-stock" class="weather-and-stock">
-                        <header>증시</header>
+                        <header>
+                            <p>증시</p>
+                            <span class="dates">날짜 시간</span>
+                            <button><span class="blind">새로고침</span></button>
+                        </header>
                         <div></div>
                     </section>
+                    <script>
+                        const dates = document.querySelector(".dates");
+
+                        
+                    </script>
                 </div>
             </main>
         </div>
