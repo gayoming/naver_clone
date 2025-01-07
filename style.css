@@ -133,7 +133,7 @@
         nav li:last-child a div::after {background: url(./img/save_the_children.png) no-repeat; background-size: 40px 40px; border-radius: 15px;} 
 
         /* 메인 */
-        main {height: 2000px; display: flex; margin: 29px 0 0;}
+        main {display: flex; margin: 29px 0 40px;}
         aside[id$=ad] {background: grey; border-radius: 8px; margin: 0 0 16px;}
         /* aside[id^=main] id가 main으로 시작하는 것 */
         section[id^=main] {box-shadow: 0 0 0 1px #e3e5e8, 0 1px 2px 0 rgba(0, 0, 0, 0.4);
@@ -219,7 +219,9 @@
         #main-shopping footer .ad {border: 1px solid var(--color_border_out);  color: var(--color_caption2); width: 30px; height: 18px; border-radius: 4px; font-size: .7875rem; line-height: 15px; text-align: center; margin-top: 9px; justify-items: flex-end; position: absolute; right: 20px; font-weight: normal;}
         #main-shopping-top .right_grid {display: grid; grid-template-rows: 175px 170px; grid-template-columns: 1fr 1fr 1fr 1fr 1fr;}
         #main-shopping-top .right_grid div {padding-bottom: 5px;}
-        #main-shopping-top .right_grid div span {position: relative; border-radius: 4px;}
+        #main-shopping-top .right_grid div:hover {text-decoration: underline;}
+        #main-shopping-top .right_grid div:hover img {transform: scale(1.1); transition: all 0.5s;}
+        #main-shopping-top .right_grid div span {position: relative; border-radius: 4px;  width: 100px; height: 128px; overflow: hidden;}
         #main-shopping-top .right_grid div img {border-radius: 4px;}
         #main-shopping-top .right_grid div span::before {content: ""; width: 98px; height: 126px; display: block; position: absolute; right: -1px; bottom: 3px; border: 1px solid rgba(0, 0, 0, .05); border-radius: 4px;}
         #main-shopping-top .right_grid p {margin: 0; padding: 5px 0 0; font-size: .8531rem;}
@@ -237,13 +239,18 @@
 
         /* 오른쪽 광고 배너 */
         #main-right-ad {height: 240px;}
-        .right-ad-box {width: 100%; height: 100%; background: url(./img/naver_ticket_ad.png) no-repeat; background-size: 420px 240px; background-position: 100% 100%; border-radius: 4px; position: relative;}
+        .right-ad-box {width: 100%; height: 100%; background: url(./img/naver_ticket_ad.png) no-repeat; background-size: 420px 240px; background-position: 100% 100%; border-radius: 4px; position: relative; cursor: pointer;}
         .right-ad-box::before {content: ""; display: block; position: absolute; top: 0; left: 0; right: 0; bottom: 0; border: 1px solid rgba(0, 0, 0, .05); border-radius: 4px;}
+
+        /* 오른쪽 광고 배너02 */
+        #main-naver-ad {height: 100px;}
+        .right-naver-ad {background-image: url(./img/squip_game.jpg); background-repeat: no-repeat; background-size: 420px 100px; height: 100%; border-radius: 4px; position: relative; cursor: pointer;}
+        .right-naver-ad::before {content: ""; display: block; position: absolute; top: 0; left: 0; right: 0; bottom: 0; border: 1px solid rgba(0, 0, 0, .05); border-radius: 4px;}
         
         /* 날씨 */
         #main-weather {height: 236px;}
         .weather-and-stock {padding: 0 18px;}
-        .weather-and-stock > header {display: flex;}
+        .weather-and-stock > header {display: flex; text-align: left;}
         .weather-and-stock > header p {font-size: 1rem; font-weight: 700; width: 50px;}
         .weather-and-stock > header a {border: 1px solid var(--color_border_in); border-radius: 999px; font-size: .7188rem; height: 26px; line-height: 24px; padding: 0 8px; color: var(--color_caption2); align-self: center;}
         .weather-and-stock > header a::before {content: ""; display: inline-block; background-image: url(https://pm.pstatic.net/resources/asset/sp_main.eae24523.png); background-size: 452px 436px; background-position: -91px -424px; background-repeat: no-repeat; width: 12px; height: 12px; margin: 6px 2px 0 0; vertical-align: top;}
@@ -285,4 +292,50 @@
         .stock_box .right .percent {font-size: .7188rem;}
         .stock_box .right span.down {color: #2196f3;}
         .stock_box .right span.up {color: #f44336;}
+        
+        /* 메인 배너 */
+        .main-banner {font-size: .9187rem; padding: 10px 20px 10px 10px; display: flex;}
+        .banner-area {flex: 1;}
+        .banner-area .img {margin: 0 10px;}
+        .banner-area a {display: flex;}
+        .banner-area a p {font-weight: 700; margin: 0;}
+        .banner-area a span {color: #606060;}
+        .banner-area img {width: 42px; height: 42px;}
+        .pagination span {width: 6px; height: 6px; display: inline-block; border-radius: 50%; background-color: rgba(128,134,140,.3); vertical-align:bottom; color: rgba(0,0,0,0)}
+
+        /* footer */
+        #main-footer {width: 100%; background-color: #f5f6f7;}
+        #main-footer p {margin: 0;}
+        .footer-top {display: flex; padding: 30px 0;}
+        .footer-top, .footer-bottom {width: 1280px; margin: 0 auto; font-size: .8531rem;}
+        .footer-top li:hover strong {text-decoration: underline;}
+        .footer-top li:hover img {transform: scale(1.05); transition: all 0.5s; border-radius: 4px;}
+        .footer-top li > a {display: flex; text-align: left; height: 100px;}
+        .footer-top .img {position: relative; width: 160px; height: 100px; overflow: hidden;}
+        .footer-top .img img{width: 160px; border-radius: 4px;}
+        .footer-top .img span {position: absolute; background-color: rgba(255, 255, 255, 0.5); top: 2px; right: 2px; width: 25px; height: 16px; display: inline-block; font-size: 12px; text-align: center; border-radius: 4px; border: 1px solid rgba(0, 0, 0, 0.06); line-height: 13px;}
+        .footer-top .img::after {position: absolute; height: 100px; top: 0; right: 0; bottom: 0; left: 0; border: 1px solid rgba(0, 0, 0, 0.06); border-radius: 4px; content: '';}
+        .footer-top .word {padding: 5px 3px 0 18px; font-size: .875rem; width: 260px;}
+        .footer-top .word span {font-size: .8125rem; background-color: #a0adb2; color: #fff; padding: 0 6px; border-radius: 4px; font-weight: 700; height: 20px; line-height: 20px;}
+        .footer-top .word strong {margin: 10px 0; display: block;}
+        .footer-bottom .bottom01 {width: 100%; border-top: 1px solid var(--color_border_in_divider); font-weight: 700; display: flex; justify-content: space-between; padding: 21px 0;}
+        .footer-bottom .bottom01 i {display: inline-block; background-image: url(https://pm.pstatic.net/resources/asset/sp_main.eae24523.png); background-size: 452px 436px; background-position: -261px -152px; background-repeat: no-repeat; width: 8px; height: 12px; margin: 4px 0 0 10px; vertical-align: top;}
+        .footer-bottom .bottom01 p a:hover {text-decoration: underline;}
+        .footer-bottom .bottom02 {display: flex; justify-content: space-between; padding: 15px 0 5px; border-top: 1px solid rgba(0, 0, 0, 0.06);}
+        .footer-bottom .bottom02-list > div, .footer-bottom .bottom02-list > div ul {display: flex; margin-top: 2px; text-align: left;}
+        .footer-bottom .bottom02-list > div:last-child {margin-top: -5px;}
+        .footer-bottom .bottom02-list .bottom-tit {font-weight: 700; width: 87px; padding-right: 9px;}
+        .footer-bottom .bottom02-list > div ul li::before {content: ""; display: inline-block; width: 1px; height: 12px; background-color: #d3d5d7; background-color: var(--color_dot_divider); margin: 0 10px; vertical-align: -1px;}
+        .footer-bottom .bottom02-list > div ul li:first-child::before {display: none;}
+        .footer-bottom .bottom02 > ul {display: flex; text-align: left; margin-top: 0px;}
+        .footer-bottom .bottom02 > ul li {display: flex; padding-left: 30px;}
+        .footer-bottom .bottom02 > ul li .img {padding-left: 10px;}
+        .footer-bottom .bottom02 > ul li .img img{width: 48px;}
+        .footer-bottom .bottom02 > ul li > div {margin-top: 3px; line-height: 22px;}
+        .footer-bottom .bottom02 > ul strong {display: block;}
+        .footer-bottom .bottom03 {border-top: 1px solid rgba(0, 0, 0, 0.06); padding: 21px 0 78px;}
+        .footer-bottom .bottom03 a::before {content: ""; display: inline-block; width: 1px; height: 12px; background-color: #d3d5d7; background-color: var(--color_dot_divider); margin: 0 10px; vertical-align: -1px;}
+        .footer-bottom .bottom03 a:first-child::before {display: none;}
+        .footer-bottom .bottom03 .corp {display: inline-block; font-weight: 700; padding-left: 15px;}
+        .footer-bottom .bottom02 a:hover, .footer-bottom .bottom03 a:hover {text-decoration: underline;}
         

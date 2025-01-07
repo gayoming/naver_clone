@@ -8,6 +8,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
     <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-barun-gothic.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
     <title>NAVER</title>
 </head>
 
@@ -144,22 +145,6 @@
                             <img src="./img/seoul_digital_ad_04.jpg" alt="">
                         </div>
                     </aside>
-                    <script>
-                        const adImg = document.querySelectorAll(".ad_img img");
-                        let currentIndex = 0;
-
-                        function ad_slide() {
-                            adImg.forEach((img, index) => {
-                                img.style.opacity = '0';
-                                img.style.transition ='opcity 1s ease-in-out';
-                            });
-
-                            adImg[currentIndex].style.opacity = '1';
-                            currentIndex = (currentIndex + 1) % adImg.length;
-                        }
-                        setInterval(ad_slide, 5000);
-                        ad_slide();
-                    </script>
                     <section id="main-newstand" class="left-section">
                         <div id="main-newstand-top">
                             <header>
@@ -185,123 +170,147 @@
                             <div id="main-newstand-grid">
                                 <div>
                                     <a href="#" aria-disabled="false">
-                                        <img src="https://s.pstatic.net/static/newsstand/up/2024/0124/nsd95528325.png" height="20" alt="뉴데일리" class="news_logo">
+                                        <img src="https://s.pstatic.net/static/newsstand/up/2024/0124/nsd95528325.png"
+                                            height="20" alt="뉴데일리" class="news_logo">
                                     </a>
                                 </div>
                                 <div>
                                     <a href="#" aria-disabled="false">
-                                        <img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/015.png" height="20" alt="한국경제" class="news_logo">
+                                        <img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/015.png"
+                                            height="20" alt="한국경제" class="news_logo">
                                     </a>
                                 </div>
                                 <div>
                                     <a href="#" aria-disabled="false">
-                                        <img src="https://s.pstatic.net/static/newsstand/up/2024/0731/nsd1419103.png" height="20" alt="뉴시스" class="news_logo">
+                                        <img src="https://s.pstatic.net/static/newsstand/up/2024/0731/nsd1419103.png"
+                                            height="20" alt="뉴시스" class="news_logo">
                                     </a>
                                 </div>
                                 <div>
                                     <a href="#" aria-disabled="false">
-                                        <img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/031.png" height="20" alt="아이뉴스24" class="news_logo">
+                                        <img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/031.png"
+                                            height="20" alt="아이뉴스24" class="news_logo">
                                     </a>
                                 </div>
                                 <div>
                                     <a href="#" aria-disabled="false">
-                                        <img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/930.png" height="20" alt="뉴스타파" class="news_logo">
+                                        <img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/930.png"
+                                            height="20" alt="뉴스타파" class="news_logo">
                                     </a>
                                 </div>
                                 <div class="border-right-none">
                                     <a href="#" aria-disabled="false">
-                                        <img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/055.png" height="20" alt="SBS" class="news_logo">
+                                        <img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/055.png"
+                                            height="20" alt="SBS" class="news_logo">
                                     </a>
                                 </div>
                                 <div>
                                     <a href="#" aria-disabled="false">
-                                        <img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/030.png" height="20" alt="전자신문" class="news_logo">
+                                        <img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/030.png"
+                                            height="20" alt="전자신문" class="news_logo">
                                     </a>
                                 </div>
                                 <div>
                                     <a href="#" aria-disabled="false">
-                                        <img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/079.png" height="20" alt="노컷뉴스" class="news_logo">
+                                        <img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/079.png"
+                                            height="20" alt="노컷뉴스" class="news_logo">
                                     </a>
                                 </div>
                                 <div>
                                     <a href="#" aria-disabled="false">
-                                        <img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/326.png" height="20" alt="KBS World" class="news_logo">
+                                        <img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/326.png"
+                                            height="20" alt="KBS World" class="news_logo">
                                     </a>
                                 </div>
                                 <div>
                                     <a href="#" aria-disabled="false">
-                                        <img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/904.png" height="20" alt="JTBC" class="news_logo">
+                                        <img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/904.png"
+                                            height="20" alt="JTBC" class="news_logo">
                                     </a>
                                 </div>
                                 <div>
                                     <a href="#" aria-disabled="false">
-                                        <img src="https://s.pstatic.net/static/newsstand/2019/logo/011.png" height="20" alt="서울경제" class="news_logo">
+                                        <img src="https://s.pstatic.net/static/newsstand/2019/logo/011.png" height="20"
+                                            alt="서울경제" class="news_logo">
                                     </a>
                                 </div>
                                 <div class="border-right-none">
                                     <a href="#" aria-disable="false">
-                                        <img src="https://s.pstatic.net/static/newsstand/up/2024/0219/nsd145828169.png" height="20" alt="한겨레" class="news_logo">
+                                        <img src="https://s.pstatic.net/static/newsstand/up/2024/0219/nsd145828169.png"
+                                            height="20" alt="한겨레" class="news_logo">
                                     </a>
                                 </div>
                                 <div>
                                     <a href="#" aria-disabled="false">
-                                        <img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/006.png" height="20" alt="미디어오늘" class="news_logo">
+                                        <img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/006.png"
+                                            height="20" alt="미디어오늘" class="news_logo">
                                     </a>
                                 </div>
                                 <div>
                                     <a href="#" aria-disabled="false">
-                                        <img src="https://s.pstatic.net/static/newsstand/up/2020/0903/nsd185255316.png" height="20" alt="조선일보" class="news_logo">
+                                        <img src="https://s.pstatic.net/static/newsstand/up/2020/0903/nsd185255316.png"
+                                            height="20" alt="조선일보" class="news_logo">
                                     </a>
                                 </div>
                                 <div>
                                     <a href="#" aria-disabled="false">
-                                        <img src="https://s.pstatic.net/static/newsstand/up/2021/0824/nsd115034872.png" height="20" alt="중앙일보" class="news_logo">
+                                        <img src="https://s.pstatic.net/static/newsstand/up/2021/0824/nsd115034872.png"
+                                            height="20" alt="중앙일보" class="news_logo">
                                     </a>
                                 </div>
                                 <div>
                                     <a href="#" aria-disabled="false">
-                                        <img src="https://s.pstatic.net/static/newsstand/up/2020/0730/nsd13728808.png" height="20" alt="프라임경제" class="news_logo">
+                                        <img src="https://s.pstatic.net/static/newsstand/up/2020/0730/nsd13728808.png"
+                                            height="20" alt="프라임경제" class="news_logo">
                                     </a>
                                 </div>
                                 <div>
                                     <a href="#" aria-disabled="false">
-                                        <img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/947.png" height="20" alt="조이뉴스24" class="news_logo">
+                                        <img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/947.png"
+                                            height="20" alt="조이뉴스24" class="news_logo">
                                     </a>
                                 </div>
                                 <div class="border-right-none">
                                     <a href="#" aria-disabled="false">
-                                        <img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/384.png" height="20" alt="한국대학신문" class="news_logo">
+                                        <img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/384.png"
+                                            height="20" alt="한국대학신문" class="news_logo">
                                     </a>
                                 </div>
                                 <div>
                                     <a href="#" aria-disabled="false">
-                                        <img src="https://s.pstatic.net/static/newsstand/up/2022/0418/nsd164755323.png" height="20" alt="이코노믹리뷰" class="news_lo
+                                        <img src="https://s.pstatic.net/static/newsstand/up/2022/0418/nsd164755323.png"
+                                            height="20" alt="이코노믹리뷰" class="news_lo
                                         go">
-                                    </a>   
-                                </div>
-                                <div>
-                                    <a href="#" aria-disabled="false">
-                                    <img src="https://s.pstatic.net/static/newsstand/up/2024/0610/nsd18952420.png" height="20" alt="쿠키뉴스" class="news_logo">
                                     </a>
                                 </div>
                                 <div>
                                     <a href="#" aria-disabled="false">
-                                    <img src="https://s.pstatic.net/static/newsstand/up/2024/0709/nsd114253503.png" height="20" alt="채널A" class="news_logo">
+                                        <img src="https://s.pstatic.net/static/newsstand/up/2024/0610/nsd18952420.png"
+                                            height="20" alt="쿠키뉴스" class="news_logo">
                                     </a>
                                 </div>
                                 <div>
                                     <a href="#" aria-disabled="false">
-                                    <img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/144.png" height="20" alt="스포츠경향" class="news_logo">
+                                        <img src="https://s.pstatic.net/static/newsstand/up/2024/0709/nsd114253503.png"
+                                            height="20" alt="채널A" class="news_logo">
                                     </a>
                                 </div>
                                 <div>
                                     <a href="#" aria-disabled="false">
-                                    <img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/539.png" height="20" alt="위키트리" class="news_logo">
+                                        <img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/144.png"
+                                            height="20" alt="스포츠경향" class="news_logo">
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#" aria-disabled="false">
+                                        <img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/539.png"
+                                            height="20" alt="위키트리" class="news_logo">
                                     </a>
                                 </div>
                                 <div class="border-right-none">
                                     <a href="#" aria-disabled="false">
-                                    <img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/353.png" height="20" alt="중앙SUNDAY" class="news_logo">
+                                        <img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/353.png"
+                                            height="20" alt="중앙SUNDAY" class="news_logo">
                                     </a>
                                 </div>
                             </div>
@@ -371,7 +380,8 @@
                                     </ul>
                                     <div class="ad_box">
                                         <span>
-                                            <img src="https://s.pstatic.net/shopping.phinf/20241226_5/c0ed4a29-10e2-48e8-8be7-1091509df5b7.jpg" width="268" height="146" alt="패딩백 신상 업데이트! 역대급 세일!">
+                                            <img src="https://s.pstatic.net/shopping.phinf/20241226_5/c0ed4a29-10e2-48e8-8be7-1091509df5b7.jpg"
+                                                width="268" height="146" alt="패딩백 신상 업데이트! 역대급 세일!">
                                         </span>
                                         <p>패딩백 신상 업데이트! 역대급 세일!</p>
                                     </div>
@@ -379,61 +389,71 @@
                                 <div class="right_grid">
                                     <div>
                                         <span>
-                                        <img src="https://s.pstatic.net/shopping.phinf/20241118_6/092edd0e-2ccc-45f0-8005-9685ad692951.jpg?type=f294_378" width="98" height="126" alt="현무암 모공 아직도 가려?">
+                                            <img src="https://s.pstatic.net/shopping.phinf/20241118_6/092edd0e-2ccc-45f0-8005-9685ad692951.jpg?type=f294_378"
+                                                width="98" height="126" alt="현무암 모공 아직도 가려?">
                                         </span>
                                         <p>현무암 모공 아직도 가려?</p>
                                     </div>
                                     <div>
                                         <span>
-                                        <img src="https://s.pstatic.net/shopping.phinf/20241219_9/dc3f308a-bdbf-408a-98da-160222da1ed5.jpg?type=f294_378" width="98" height="126" alt="나를 위한 선물 올해 마지막특가">
+                                            <img src="https://s.pstatic.net/shopping.phinf/20241219_9/dc3f308a-bdbf-408a-98da-160222da1ed5.jpg?type=f294_378"
+                                                width="98" height="126" alt="나를 위한 선물 올해 마지막특가">
                                         </span>
                                         <p>나를 위한 선물 올해 마지막특가</p>
                                     </div>
                                     <div>
                                         <span>
-                                        <img src="https://s.pstatic.net/shopping.phinf/20241118_13/67776b50-e641-4de7-8345-ba1849519c2e.jpg?type=f294_378" width="98" height="126" alt="유기농 레몬즙 오늘 61% 할인">
+                                            <img src="https://s.pstatic.net/shopping.phinf/20241118_13/67776b50-e641-4de7-8345-ba1849519c2e.jpg?type=f294_378"
+                                                width="98" height="126" alt="유기농 레몬즙 오늘 61% 할인">
                                         </span>
                                         <p>유기농 레몬즙 오늘 61% 할인</p>
                                     </div>
                                     <div>
                                         <span>
-                                        <img src="https://s.pstatic.net/shopping.phinf/20241127_27/33a23fac-c8fe-41c5-b358-234881314856.jpg?type=f294_378" width="98" height="126" alt="2만원대 실화야? 반짝특가SALE↓">
+                                            <img src="https://s.pstatic.net/shopping.phinf/20241127_27/33a23fac-c8fe-41c5-b358-234881314856.jpg?type=f294_378"
+                                                width="98" height="126" alt="2만원대 실화야? 반짝특가SALE↓">
                                         </span>
                                         <p>2만원대 실화야? 반짝특가SALE↓</p>
                                     </div>
                                     <div>
                                         <span>
-                                        <img src="https://s.pstatic.net/shopping.phinf/20241219_7/56e00dd3-f638-44e8-a957-6e992442e37f.jpg?type=f294_378" width="98" height="126" alt="예쁜 빅사이즈~ 감사제 최대60%">
+                                            <img src="https://s.pstatic.net/shopping.phinf/20241219_7/56e00dd3-f638-44e8-a957-6e992442e37f.jpg?type=f294_378"
+                                                width="98" height="126" alt="예쁜 빅사이즈~ 감사제 최대60%">
                                         </span>
                                         <p>예쁜 빅사이즈~ 감사제 최대60%</p>
                                     </div>
                                     <div>
                                         <span>
-                                        <img src="https://s.pstatic.net/shopping.phinf/20241205_0/4436edb5-308d-4923-a5a1-d638c69475cc.jpg?type=f294_378" width="98" height="126" alt="하체 전체 케어 괴물 마사지부츠">
+                                            <img src="https://s.pstatic.net/shopping.phinf/20241205_0/4436edb5-308d-4923-a5a1-d638c69475cc.jpg?type=f294_378"
+                                                width="98" height="126" alt="하체 전체 케어 괴물 마사지부츠">
                                         </span>
                                         <p>하체 전체 케어 괴물 마사지부츠</p>
                                     </div>
                                     <div>
                                         <span>
-                                        <img src="https://s.pstatic.net/shopping.phinf/20241209_29/99915fca-2a4a-4ffd-99c6-582cd0e1b698.jpg?type=f294_378" width="98" height="126" alt="목의결림이 싹~! 깊은잠베개 50%">
+                                            <img src="https://s.pstatic.net/shopping.phinf/20241209_29/99915fca-2a4a-4ffd-99c6-582cd0e1b698.jpg?type=f294_378"
+                                                width="98" height="126" alt="목의결림이 싹~! 깊은잠베개 50%">
                                         </span>
                                         <p>목의결림이 싹~! 깊은잠베개 50%</p>
                                     </div>
                                     <div>
                                         <span>
-                                        <img src="https://s.pstatic.net/shopping.phinf/20241205_18/bd05a6d7-d7b2-427b-bbfd-3f7202693e54.jpg?type=f294_378" width="98" height="126" alt="순자엄마 효도템 한방찜질팩 세트">
+                                            <img src="https://s.pstatic.net/shopping.phinf/20241205_18/bd05a6d7-d7b2-427b-bbfd-3f7202693e54.jpg?type=f294_378"
+                                                width="98" height="126" alt="순자엄마 효도템 한방찜질팩 세트">
                                         </span>
                                         <p>순자엄마 효도템 한방찜질팩 세트</p>
                                     </div>
                                     <div>
                                         <span>
-                                        <img src="https://s.pstatic.net/shopping.phinf/20241211_24/01553ad4-66ce-4d7c-9ec2-4b160028b9ec.jpg?type=f294_378" width="98" height="126" alt="STL 연말 특가 최대 91%↓">
+                                            <img src="https://s.pstatic.net/shopping.phinf/20241211_24/01553ad4-66ce-4d7c-9ec2-4b160028b9ec.jpg?type=f294_378"
+                                                width="98" height="126" alt="STL 연말 특가 최대 91%↓">
                                         </span>
                                         <p>STL 연말 특가 최대 91%↓</p>
                                     </div>
                                     <div>
                                         <span>
-                                        <img src="https://s.pstatic.net/shopping.phinf/20241226_14/9fb30508-e799-4b1a-bfb5-c258490d89da.jpg?type=f294_378" width="98" height="126" alt="연말까지 더춥대 40%특가진행중">
+                                            <img src="https://s.pstatic.net/shopping.phinf/20241226_14/9fb30508-e799-4b1a-bfb5-c258490d89da.jpg?type=f294_378"
+                                                width="98" height="126" alt="연말까지 더춥대 40%특가진행중">
                                         </span>
                                         <p>연말까지 더춥대 40%특가진행중</p>
                                     </div>
@@ -443,17 +463,20 @@
                                 <div class="left">
                                     <a href="#" class="bold">오늘의 혜택</a>
                                     <div id="main-shopping-animation">
-                                        <a href="#"><img height="13" src="https://s.pstatic.net/shopping.phinf/20230515_2/ec934726-b045-4267-9ef1-398cbb675711.jpg" alt="쿠팡">
-                                        속보! <span class="shopping">최대 80% 역대급 SALE</span>패션 아울렛 오픈! 저렴하게 득템!
+                                        <a href="#"><img height="13"
+                                                src="https://s.pstatic.net/shopping.phinf/20230515_2/ec934726-b045-4267-9ef1-398cbb675711.jpg"
+                                                alt="쿠팡">
+                                            속보! <span class="shopping">최대 80% 역대급 SALE</span>패션 아울렛 오픈! 저렴하게 득템!
                                         </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                       
+
                         <footer>
                             <buttton class="prev"><span class="blind">이전 페이지</span></buttton>
-                            <div class="text"><span class="shopping">쇼핑아이템</span> 더보기 1<span class="total">/4</span></div>
+                            <div class="text"><span class="shopping">쇼핑아이템</span> 더보기 1<span class="total">/4</span>
+                            </div>
                             <buttton class="next"><span class="blind">다음 페이지</span></buttton>
                             <buttton class="ad">AD<span class="blind">광고보기</span></buttton>
                         </footer>
@@ -471,6 +494,9 @@
                     </section>
                     <aside id="main-right-ad">
                         <div class="right-ad-box"></div>
+                    </aside>
+                    <aside id="main-naver-ad">
+                        <div class="right-naver-ad"></div>
                     </aside>
                     <section id="main-weather" class="weather-and-stock">
                         <header>
@@ -512,7 +538,7 @@
                             <div class="left" id="stockSlide">
                                 <div><img src="./img/kospi.png" alt=""></div>
                                 <div><img src="./img/kosdak.png" alt=""></div>
-                                <div><img src="./img/USD.png" alt="" ></div>
+                                <div><img src="./img/USD.png" alt=""></div>
                             </div>
                             <div class="right">
                                 <ul>
@@ -553,24 +579,137 @@
                             </div>
                         </div>
                     </section>
-                    <script>
-                           function updateDateTime() {
-                                const dateTimeElement = document.getElementById('dateTime');
-                                const now = new Date();
-                                const formattedDateTime = `${String(now.getMonth() + 1).padStart(2, '0')}.${String(now.getDate()).padStart(2, '0')} ` +
-                                 `${String(now.getHours()).padStart(2, '0')}:${String(now.getMinutes()).padStart(2, '0')}`;
-                                dateTimeElement.textContent = formattedDateTime;
-                                }
-
-                                updateDateTime();
-
-                                document.getElementById('refresh').addEventListener('click', updateDateTime);
-                                
-                    </script>
+                    <section id="main-banner" class="main-banner">
+                        <div class="banner-area">
+                            <a href="#">
+                                <div class="img"><img src="./img/banner_01.png" alt="네넷"></div>
+                                <div>
+                                    <p>네이버에서 넷플릭스를</p>
+                                    <span>역대급 멤버십 시작하기</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="pagination">
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </section>
                 </div>
             </main>
         </div>
+        <footer id="main-footer">
+            <ul class="footer-top">
+                <li>
+                    <a href="#">
+                        <div class="img">
+                            <img src="./img/footer_01.jpg" alt="">
+                            <span>AD</span>
+                        </div>
+                        <div class="word">
+                            <span>유엔난민기구</span>
+                            <strong>비닐 신발로 겨울을 나는 아이들</strong>
+                            <p>아이들의 시린 발을 보호해 줄 따뜻한 방한화를 보내주세요</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="img">
+                            <img src="./img/footer_02.jpg" alt="">
+                        </div>
+                        <div class="word">
+                            <span>네이버 해피빈 펀딩</span>
+                            <strong>배우 이제훈의 워터탱크 키링</strong>
+                            <p>아프리카에 깨끗한 물을 선물하는 따뜻한 여정에 함께하세요!</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="img">
+                            <img src="./img/footer_03.jpg" alt="">
+                        </div>
+                        <div class="word">
+                            <span>국가유산진흥원</span>
+                            <strong>국가유산 방문자 여권</strong>
+                            <p>세월의 울림에서 새로운 끌림으로 2025년에도 함께 합니다</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <div class="footer-bottom">
+                <div class="bottom01">
+                    <p><a href="#">공지사항</a></p>
+                    <p><a href="#">서비스 전체보기</a><i><span class="blind">더보기</span></i></p>
+                </div>
+                <div class="bottom02">
+                    <div class="bottom02-list">
+                        <div>
+                            <p class="bottom-tit">Partners</p>
+                            <ul>
+                                <li><a href="#">프로젝트 꽃</a></li>
+                                <li><a href="#">네이버 비즈니스</a></li>
+                                <li><a href="#">네이버 비즈니스 스쿨</a></li>
+                                <li><a href="#">네이버 광고</a></li>
+                                <li><a href="#">스토어 개설</a></li>
+                                <li><a href="#">지역업체 등록</a></li>
+                                <li><a href="#">엑스퍼트 등록</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p class="bottom-tit">Developers</p>
+                            <ul>
+                                <li><a href="#">네이버 개발자 센터</a></li>
+                                <li><a href="#">오픈 API</a></li>
+                                <li><a href="#">오픈소스</a></li>
+                                <li><a href="#">네이버 D2</a></li>
+                                <li><a href="#">네이버 D2SF</a></li>
+                                <li><a href="#">네이버 랩스</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>
+                            <div>
+                                <strong>웨일 브라우저</strong>
+                                <span>이용안내</span>
+                            </div>
+                            <a class="img">
+                                <img src="img/whale_browser.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <div>
+                                <strong>기업 사이트</strong>
+                                <span>바로가기</span>
+                            </div>
+                            <a class="img">
+                                <img src="img/naver_black.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bottom03">
+                    <a href="#">회사소개</a>
+                    <a href="#">인재채용</a>
+                    <a href="#">제휴제안</a>
+                    <a href="#">이용약관</a>
+                    <a href="#">개인정보처리방침</a>
+                    <a href="#">청소년보호정책</a>
+                    <a href="#">네이버 정책</a>
+                    <a href="#">고객센터</a>
+                    <p class="corp">&copy; NAVER Corp.</p>
+                </div>
+            </div>
+        </footer>
     </div>
 </body>
 
 </html>
+<!-- <a href="#">
+                        <div class="img"><img src="./img/banner_02.png" alt="네넷"></div>
+                        <div>
+                            <p>클파원 갓 어워즈가 곧 끝나요!</p>
+                            <span>핫플 리뷰의 신 1등 1천만원</span>
+                        </div>
+                    </a> -->
